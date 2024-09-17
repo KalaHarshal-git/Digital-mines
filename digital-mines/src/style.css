@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.site-title {
+    font-size: 1.3rem;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.profile-dropdown {
+    display: none; /* Remove profile dropdown */
+}
+
+.login-button {
+    margin-left: auto;
+}
+
+.login-button a {
+    background-color: #007bff; /* Blue for login button */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.login-button a:active {
+    background-color: #004494; /* Even darker blue when clicked */
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('assets/Herobg.jpg'); /* Add the path to your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the hero section takes up the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; /* Text color on top of the image */
+    text-align: center;
+    font-weight: 50;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff9900;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px 30px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* Value Proposition Section */
+.value-proposition-section {
+    padding: 50px 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.value-proposition-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.benefits-column {
+    flex: 1;
+}
+
+.benefits-list {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.benefits-list li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.media-column {
+    flex: 1;
+}
+
+.demo-video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.testimonial-icon {
+    width: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.testimonial-quote {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.carousel-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Technology Stack/Integration Section */
+.tech-stack-section {
+    padding: 50px 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tech-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.tech-icon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.tech-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 10px;
+}
+
+.quick-links ul, .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li, .social-media a {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover, .social-media a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+}

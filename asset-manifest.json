@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Digital-mines/static/css/main.937986af.css",
+    "main.js": "/Digital-mines/static/js/main.09a29a1e.js",
+    "static/media/Herobg.jpg": "/Digital-mines/static/media/Herobg.68a2840ce5a141566180.jpg",
+    "index.html": "/Digital-mines/index.html",
+    "main.937986af.css.map": "/Digital-mines/static/css/main.937986af.css.map",
+    "main.09a29a1e.js.map": "/Digital-mines/static/js/main.09a29a1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.937986af.css",
+    "static/js/main.09a29a1e.js"
+  ]
+}
